@@ -7,7 +7,7 @@ module.exports = class CarInsurance {
 
   updatePrice () {
     for (var i = 0; i < this.products.length; i++) {
-      Rule.getRule(this.products[i].name).updatePrice(this.products[i])
+      Rule.updatePrice(this.products[i])
     }
     return this.products
   }

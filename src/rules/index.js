@@ -13,9 +13,8 @@ const rules = {
 }
 
 module.exports = class Rule {
-  static getRule (name) {
-    const resp = rules[name] || rules['Default']
-    return resp
+  static updatePrice(product) {
+    const rule = rules[product.name] || rules['Default']
+    return rule.updatePrice(product)
   }
-
 }
