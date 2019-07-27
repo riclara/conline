@@ -7,6 +7,7 @@ module.exports = class DefaultRule {
     } else {
       product.price--
     }
+    if (product.price > 50) product.price = 50
     return product
   }
 }

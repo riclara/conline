@@ -1,6 +1,7 @@
 const DefaultRule = require('../rules/defaultRule')
 const FullCoverageRule = require('../rules/fullCoverageRule')
 const MegaCoverageRule = require('../rules/megaCoverageRule')
+const SpecialFullCoverageRule = require('../rules/specialFullCoverageRule')
 
 module.exports = class CarInsurance {
   constructor (products = []) {
@@ -11,8 +12,7 @@ module.exports = class CarInsurance {
     for (var i = 0; i < this.products.length; i++) {
       switch (this.products[i].name) {
         case 'Special Full Coverage':
-          // code block
-          // console.log('pending implement')
+          this.products[i] = SpecialFullCoverageRule.updatePrice(this.products[i])
           break
         case 'Full Coverage':
           this.products[i] = FullCoverageRule.updatePrice(this.products[i])
