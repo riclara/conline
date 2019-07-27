@@ -18,7 +18,7 @@ const productPrinter = function (product) {
   console.log(`${product.name}, ${product.sellIn}, ${product.price}`)
 }
 
-console.log(`Day 0`)
+console.log('Day 0')
 console.log('name, sellIn, price')
 productsAtDayZero.forEach(productPrinter)
 console.log('')
