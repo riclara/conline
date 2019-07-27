@@ -1,5 +1,5 @@
 const Product = require('./model/product')
-const CarInsurance = require('./product/carInsurance')
+const CarInsurance = require('./products/carInsurance')
 
 const productsAtDayZero = [
   new Product('Medium Coverage', 10, 20),

@@ -1,8 +1,3 @@
-// const DefaultRule = require('../rules/defaultRule')
-// const FullCoverageRule = require('../rules/fullCoverageRule')
-// const MegaCoverageRule = require('../rules/megaCoverageRule')
-// const SpecialFullCoverageRule = require('../rules/specialFullCoverageRule')
-// const SuperSale = require('../rules/superSale')
 const Rule = require('../rules')
 
 module.exports = class CarInsurance {
