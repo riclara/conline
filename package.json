@@ -4,7 +4,7 @@
   "description": "tecnical evaluation",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha spec/*.js",
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha spec/*.js",
     "after-30-days": "node src/index.js"
   },
   "repository": {
@@ -21,9 +21,11 @@
   },
   "homepage": "",
   "devDependencies": {
+    "ava": "^2.2.0",
     "chai": "^4.1.2",
+    "eslint-config-standard": "^11.0.0-beta.0",
     "mocha": "^4.0.1",
-    "eslint-config-standard": "^11.0.0-beta.0"
+    "nyc": "^14.1.1"
   },
   "dependencies": {}
 }

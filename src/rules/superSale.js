@@ -1,7 +1,6 @@
 module.exports = class SuperSaleRule {
   static updatePrice (product) {
     product.sellIn--
-    if (product.price <= 0) return product
     if (product.sellIn < 0) {
       product.price = product.price - 4
     } else {
